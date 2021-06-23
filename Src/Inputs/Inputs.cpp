@@ -47,14 +47,14 @@ CInputs::CInputs(CInputSystem *system)
 	//uiPause            = AddSwitchInput("UIPause",            "Pause",                 Game::INPUT_UI, "KEY_ALT+KEY_P");
 	uiFullScreen       = AddSwitchInput("UIFullScreen",       "Toggle Fullscreen",     Game::INPUT_UI, "KEY_ALT+KEY_RETURN");
 	//uiSaveState        = AddSwitchInput("UISaveState",        "Save State",            Game::INPUT_UI, "KEY_F5");
-	uiChangeSlot       = AddSwitchInput("UIChangeSlot",       "Change Save Slot",      Game::INPUT_UI, "KEY_F6");
+	//uiChangeSlot       = AddSwitchInput("UIChangeSlot",       "Change Save Slot",      Game::INPUT_UI, "KEY_F6");
 	//uiLoadState        = AddSwitchInput("UILoadState",        "Load State",            Game::INPUT_UI, "KEY_F7");
 	uiMusicVolUp	     = AddSwitchInput("UIMusicVolUp",		    "Increase Music Volume", Game::INPUT_UI, "KEY_F10");
 	uiMusicVolDown	   = AddSwitchInput("UIMusicVolDown",	    "Decrease Music Volume", Game::INPUT_UI, "KEY_F9");
 	uiSoundVolUp	     = AddSwitchInput("UISoundVolUp",		    "Increase Sound Volume", Game::INPUT_UI, "KEY_F12");
 	uiSoundVolDown	   = AddSwitchInput("UISoundVolDown",	    "Decrease Sound Volume", Game::INPUT_UI, "KEY_F11");
 	uiClearNVRAM       = AddSwitchInput("UIClearNVRAM",       "Clear NVRAM",           Game::INPUT_UI, "KEY_ALT+KEY_N");
-	uiSelectCrosshairs = AddSwitchInput("UISelectCrosshairs", "Select Crosshairs",     Game::INPUT_UI, "KEY_ALT+KEY_I");
+	//uiSelectCrosshairs = AddSwitchInput("UISelectCrosshairs", "Select Crosshairs",     Game::INPUT_UI, "KEY_ALT+KEY_I");
 	uiToggleFrLimit    = AddSwitchInput("UIToggleFrameLimit", "Toggle Frame Limiting", Game::INPUT_UI, "KEY_ALT+KEY_T");
 	uiDumpInpState     = AddSwitchInput("UIDumpInputState",   "Dump Input State",      Game::INPUT_UI, "KEY_ALT+KEY_U");
 	uiDumpTimings      = AddSwitchInput("UIDumpTimings",      "Dump Frame Timings",    Game::INPUT_UI, "KEY_ALT+KEY_O");
@@ -76,7 +76,9 @@ CInputs::CInputs(CInputSystem *system)
 	uiPause            = AddSwitchInput("UIPause",  "Pause",     Game::INPUT_COMMON, "NONE");
 	uiScreenshot       = AddSwitchInput("UIScreenShot",	 "Screenshot",    Game::INPUT_COMMON, "NONE");
 	uiSaveState        = AddSwitchInput("UISaveState",   "Save State",    Game::INPUT_COMMON, "NONE");
-	uiLoadState        = AddSwitchInput("UILoadState",   "Load State",    Game::INPUT_UI, "NONE");
+	uiLoadState        = AddSwitchInput("UILoadState",   "Load State",    Game::INPUT_COMMON, "NONE");
+	uiSelectCrosshairs = AddSwitchInput("UISelectCrosshairs", "Select Crosshairs",     Game::INPUT_COMMON, "NONE");
+	uiChangeSlot       = AddSwitchInput("UIChangeSlot",       "Change Save Slot",      Game::INPUT_COMMON, "NONE");
 	// 4-Way Joysticks
 	up[0]              = AddSwitchInput("JoyUp",     "P1 Joystick Up",    Game::INPUT_JOYSTICK1, "NONE");
 	down[0]            = AddSwitchInput("JoyDown",   "P1 Joystick Down",  Game::INPUT_JOYSTICK1, "NONE");
